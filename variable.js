@@ -8,3 +8,12 @@ accountCity = "jaipur"
 accountEmail = "dfadsf@gmail.com"
 accountPassword = "1234"
 console.log(accountId)
+
+// console.table([accountEmail, accountId, accountPassword])
+
+
+
+
+let name = "rajeev"
+let age = 18
+let isLoggedIn = false
