@@ -100,15 +100,17 @@ const add = function (){
     console.log("hello world");
 }
 
-console.log(typeof(add()));
+// console.log(typeof(add));
 
+//  **************************** memory allocation ***********************
 
+// stack => primitive data type, 
+// heap => non-primitive data type
 
+let myYoutubename = "rajeevdot.com"
+let anotherName = myYoutubename
 
-
-
-
-
+console.log(anotherName);
 
 
 
