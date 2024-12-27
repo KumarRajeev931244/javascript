@@ -129,3 +129,21 @@ const {name: firstName} = course;
     courseName: 'javascript'
     courseDuration: '3 months'
 }
+
+
+
+
+/**
+ * for in =>The for...in loop in JavaScript is used to iterate over the enumerable properties of an object. It's important to understand that it iterates over property names (keys), not the values directly.
+ */
+
+const myObject = {
+    js: 'javascript',
+    cpp: 'c++',
+    rb: "ruby",
+    swift: 'swift'
+}
+
+for (const key in myObject) {
+    console.log(`the keys of myObject: ${key} and their value: ${myObject[key]}` );  
+}
