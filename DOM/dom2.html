@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+    <style>
+        .body{
+            background-color: #212121;
+            color: #fff;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body class="body">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>   
+</body>
+<script>
+    function addLanguage(langName){
+       const li =  document.createElement('li')
+       li.innerHTML = `${langName}`  // it traverse whole tree.
+       document.querySelector('.language').appendChild(li)
+
+    }
+    addLanguage('python')
+    addLanguage('typescript')
+    
+    function addOptimalLanguage(langName){
+        const li = document.createElement('li') // creating element.
+        li.appendChild(document.createTextNode(langName)) // insert into li
+        document.querySelector('.language').appendChild(li) 
+    }
+    addOptimalLanguage('golang')
+
+    //Edit
+
+   const secondLang =  document.querySelector('li:nth-child(2)') // selecting the element.
+   const newli = document.createElement('li')
+   newli.textContent = 'mojo'
+   secondLang.replaceWith(newli)
+   // edit
+
+   const firstLang = document.querySelector('li: first-child')
+   firsttLang.outerHTML = '<li>TypeScript</li>'
+
+//    remove
+const lastLang = document.querySelector('li:last-child')
+lastLang.remove()
+
+</script>
+</html>

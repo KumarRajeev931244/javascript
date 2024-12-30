@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .addButton{
+            font-size: larger;
+            padding: auto;
+            border-radius: 10px;
+            border-color: aqua;
+            
+        }
+        .addButton2{
+            margin-left: 30px;
+            font-size: larger;
+            padding: auto;
+            border-radius: 10px;
+            border-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    const heading = document.createElement('h1')
+    heading.className = 'heading'
+    heading.id = 'h1'
+    heading.innerText = 'my name is Rajeev.'
+    document.body.appendChild(heading)
+    console.log(heading)
+    const button1 = document.createElement('button')
+    button1.className = 'addButton'
+    button1.id = 'button1'
+    button1.innerText = 'click here to increase '
+    document.body.appendChild(button1)
+    const button2 = document.createElement('button')
+    button2.className =  "addButton2"
+    button2.innerText = 'click here to decrease'
+    document.body.appendChild(button2)
+
+</script>
+</html>
