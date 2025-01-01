@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            const data = this.responseText
+            console.log(data);
+            
+            console.log(`number of hitesh follower: ${data.followers
+            }`);
+            
+        }
+        
+    }
+    
+    xhr.send()
+</script>
+</html>
+
+
+// API => API stands for Application Programming Interface. It's a set of rules and specifications that software applications can follow to communicate with each other. Think of it as a messenger that takes requests from one system and delivers them to another, then brings the response back.
+// randomuser.me and use json formatter
+
