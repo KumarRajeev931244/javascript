@@ -31,3 +31,5 @@ user.prototype.changeUserName = function(){
 const tea = new user("tea", "tea@gmail.com", "123")
 console.log(tea.changeUserName());
 
+
+
